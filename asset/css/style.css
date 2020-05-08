@@ -1,0 +1,25 @@
+/*css reset*/
+*{margin: 0; padding: 0;}
+ul,ol {list-style: none;}
+
+body{font-family: 'Noto Sans KR', sans-serif;}
+/*keyboard styling*/
+.keyboard-conainer {width: 1920px; background-color: #d1e1f1; padding: 1.3%; box-sizing: border-box;}
+.key-box {width: 108px; height: 108px; border-radius: 54px; background-color: #f9f9f9; border: 2px solid #dfdfdf; transform: scale(1); transition: all 0.3s; box-shadow: 0 0 32px rgba(171,171,171,0.2);}
+.keyboard-row {display: flex; justify-content: space-around; margin-top: 10px;}
+.keyboard-row:first-child {margin-top: 0;}
+.keyboard-row li {order: 14; display: table;}
+.keyboard-row.alphabet li:first-child .event-key {text-align: left; padding-left: 41px;}
+.keyboard-row.alphabet li:last-child .event-key {text-align: right; padding-right: 41px;}
+.keyboard-row li .event-key .up{padding-bottom: 7px;}
+.keyboard-row li .event-key .down{padding-top: 7px;}
+.backspace {width: 216px;}
+.backslash, .tab {width: 162px;}
+.caps {width: 192px;}
+.enter {width: 266px;}
+.l-shift{width: 266px;}
+.r-shift{width: 310px;}
+.space {width: 720px; background-image: url(../../images/jake_face.png); background-size: 161px 90px; background-repeat: no-repeat; background-position: 50%; background-color: #fdd214; position: relative; z-index: 1;}
+
+/*event key styling*/
+.event-key {text-align: center; display: table-cell; vertical-align: middle; overflow: hidden;}
