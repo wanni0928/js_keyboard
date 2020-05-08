@@ -21,10 +21,7 @@ function handleKeyEvent(e) {
     }else {
         box = tab.parentNode;
     }
-    // console.log(tab);
-    // console.log(box);
     e.preventDefault();
-    console.log(e);
     box.classList.add(TAB);
     handleTab(box);
 }
