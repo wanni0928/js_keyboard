@@ -2,6 +2,8 @@ const TAB = "js-tab";
 const SHIFT_L = "js-shift-l";
 const SHIFT_R = "js-shift-r";
 
+const keyList = document.querySelectorAll(".js-key");
+
 // function handleTab(element) {
 //     element.addEventListener("keyup", function(e){
 //         element.classList.remove(TAB);
@@ -42,6 +44,16 @@ function init(){
         }
         console.log(keyBox);
         keyBox.classList.remove(TAB);
+    });
+
+    keyList.forEach(key => {
+        key.addEventListener("click", function(e){
+            console.log(e.target.parentNode.classList);
+            e.target.parentNode.classList.add(TAB);
+            setTimeout(function(){
+                e.target.parentNode.classList.remove(TAB);
+            },300);
+        });
     });
 }
 
