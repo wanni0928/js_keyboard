@@ -3,6 +3,7 @@ const SHIFT_L = "js-shift-l";
 const SHIFT_R = "js-shift-r";
 
 const keyList = document.querySelectorAll(".js-key");
+const transitionSec = 300;
 
 // function handleTab(element) {
 //     element.addEventListener("keyup", function(e){
@@ -52,7 +53,7 @@ function init(){
             e.target.parentNode.classList.add(TAB);
             setTimeout(function(){
                 e.target.parentNode.classList.remove(TAB);
-            },300);
+            },transitionSec);
         });
     });
 }
